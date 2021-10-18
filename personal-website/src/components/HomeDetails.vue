@@ -1,18 +1,20 @@
 <template>
   <v-container fluid class="brown lighten-4">
-    <v-container grid-list-lg>
+    <v-container class="inner-container">
       <v-layout column>
-        <v-flex
+        <v-row
           class="display-2 font-weight-black brown--text text-xs-center my-5"
-          ><v-img
-            class="profile"
-            dark
-            aspect-ratio="1"
-            max-height="200px"
-            max-width="200px"
-            src="~@/assets/foto_accso.jpg"
-          ></v-img
-        ></v-flex>
+          ><v-col cols="3"
+            ><v-img
+              class="profile"
+              dark
+              aspect-ratio="1"
+              max-height="200px"
+              max-width="200px"
+              src="~@/assets/foto_accso.jpg"
+            ></v-img
+          ></v-col>
+        </v-row>
         <v-flex>
           <div class="headline mt-3 brown--text font-weight-bold">
             Lorem ipsum
@@ -106,5 +108,11 @@ export default {
 <style scoped>
 .profile {
   border-radius: 50%;
+}
+.inner-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 </style>

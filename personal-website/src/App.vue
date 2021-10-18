@@ -1,7 +1,7 @@
 <template>
   <v-app id="app">
     <navbar />
-    <v-main transition="slide-x-transition">
+    <v-main transition="slide-x-transition" class="layout">
       <router-view></router-view>
     </v-main>
   </v-app>
