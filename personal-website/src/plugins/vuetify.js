@@ -10,7 +10,7 @@ const vuetify = new Vuetify({
     themes: {
       light: {
         primary: colors.purple,
-        secondary: colors.grey.darken1,
+        secondary: "#2A63FF",
         accent: colors.shades.black,
         error: colors.red.accent3,
       },

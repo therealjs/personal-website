@@ -1,21 +1,21 @@
 <template>
   <v-container grid-list-lg>
-    <v-layout row>
-      <v-flex xs12 class="text-xs-center display-1 font-weight-black my-5"
-        >Available Meal Plans</v-flex
+    <v-row row>
+      <v-col xs12 class="text-xs-center display-1 font-weight-black my-5"
+        >Available Meal Plans</v-col
       >
-    </v-layout>
-    <v-layout row wrap class="meal-plans">
-      <v-flex xs12 sm12 md4>
+    </v-row>
+    <v-row row wrap class="meal-plans">
+      <v-col xs12 sm12 md4>
         <v-card>
           <v-responsive>
             <v-img src="http://source.unsplash.com/hjCA3ecCXAQ" height="500px">
               <v-container fill-height fluid>
-                <v-layout fill-height>
-                  <v-flex xs12 align-end flexbox>
+                <v-row fill-height>
+                  <v-col xs12 align-end flexbox>
                     <span class="headline white--text">KETO</span>
-                  </v-flex>
-                </v-layout>
+                  </v-col>
+                </v-row>
               </v-container>
             </v-img>
           </v-responsive>
@@ -43,18 +43,18 @@
             >
           </v-card-actions>
         </v-card>
-      </v-flex>
+      </v-col>
 
-      <v-flex xs12 sm12 md4>
+      <v-col xs12 sm12 md4>
         <v-card>
           <v-responsive>
             <v-img src="http://source.unsplash.com/6S27S6pZ6o0" height="500px">
               <v-container fill-height fluid>
-                <v-layout fill-height>
-                  <v-flex xs12 align-end flexbox>
+                <v-row fill-height>
+                  <v-col xs12 align-end flexbox>
                     <span class="headline white--text">PALEO</span>
-                  </v-flex>
-                </v-layout>
+                  </v-col>
+                </v-row>
               </v-container>
             </v-img>
           </v-responsive>
@@ -82,18 +82,18 @@
             >
           </v-card-actions>
         </v-card>
-      </v-flex>
+      </v-col>
 
-      <v-flex xs12 sm12 md4>
+      <v-col xs12 sm12 md4>
         <v-card>
           <v-responsive>
             <v-img src="http://source.unsplash.com/1SPu0KT-Ejg" height="500px">
               <v-container fill-height fluid>
-                <v-layout fill-height>
-                  <v-flex xs12 align-end flexbox>
+                <v-row fill-height>
+                  <v-col xs12 align-end flexbox>
                     <span class="headline white--text">VEGAN</span>
-                  </v-flex>
-                </v-layout>
+                  </v-col>
+                </v-row>
               </v-container>
             </v-img>
           </v-responsive>
@@ -121,8 +121,8 @@
             >
           </v-card-actions>
         </v-card>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
