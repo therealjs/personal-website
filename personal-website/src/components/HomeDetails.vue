@@ -4,8 +4,15 @@
       <v-layout column>
         <v-flex
           class="display-2 font-weight-black brown--text text-xs-center my-5"
-          >How It Works</v-flex
-        >
+          ><v-img
+            class="profile"
+            dark
+            aspect-ratio="1"
+            max-height="200px"
+            max-width="200px"
+            src="~@/assets/foto_accso.jpg"
+          ></v-img
+        ></v-flex>
         <v-flex>
           <div class="headline mt-3 brown--text font-weight-bold">
             Lorem ipsum
@@ -96,4 +103,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.profile {
+  border-radius: 50%;
+}
+</style>
