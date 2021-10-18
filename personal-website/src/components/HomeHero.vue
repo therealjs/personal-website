@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid fill-height class="home-hero">
+  <!--   <v-container fluid fill-height class="home-hero">
     <v-layout justify-center align-center column pa-5>
       <div class="display-4 font-weight-black white--text text-xs-center">
         HEALTHY MEALS
@@ -15,7 +15,33 @@
         <v-icon large color="white">mdi-chevron-down</v-icon>
       </v-btn>
     </v-layout>
-  </v-container>
+  </v-container> -->
+  <v-img dark max-height="500px" src="~@/assets/programming_unsplash_large.jpg">
+    <v-layout fill-height align-center>
+      <v-container>
+        <v-row align="center" justify="center" class="white--text">
+          <v-col cols="12">
+            <div
+              :class="{
+                'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp,
+                'title font-weight-bold': $vuetify.breakpoint.smAndDown,
+              }"
+            >
+              Welcome to my page.
+            </div>
+            <div
+              :class="{
+                headline: $vuetify.breakpoint.smAndUp,
+                'subtitle-1': $vuetify.breakpoint.smAndDown,
+              }"
+            >
+              I make applications.
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-layout>
+  </v-img>
 </template>
 
 <script>
@@ -26,7 +52,7 @@ export default {
 
 <style scoped>
 .home-hero {
-  background: url("http://source.unsplash.com/0BhSKStVtdM");
+  background: url("~@/assets/programming_unsplash_large.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;

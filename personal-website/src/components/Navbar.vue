@@ -5,6 +5,7 @@
       class="brown lighten-2"
       dark
       disable-resize-watcher
+      app
     >
       <v-list>
         <template v-for="(item, index) in items">
@@ -37,7 +38,7 @@ export default {
   name: "Navbar",
   data() {
     return {
-      appTitle: "Meal Prep",
+      appTitle: "Jan Seelbach",
       drawer: false,
       items: [{ title: "Menu" }, { title: "Sign In" }, { title: "Join" }],
     };

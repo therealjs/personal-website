@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <navbar />
     <v-main transition="slide-x-transition">
       <router-view></router-view>
