@@ -14,15 +14,19 @@
                 src="~@/assets/foto_accso.jpg"
               ></v-img></v-col></v-row
           ><v-row align="center" justify="center">
-            <v-btn fab dark color="secondary" class="mx-2"
-              ><v-icon>mdi-github</v-icon></v-btn
-            ><v-btn fab dark color="secondary" class="mx-2"
-              ><v-icon>mdi-email</v-icon></v-btn
-            ><v-btn fab dark color="secondary" class="mx-2"
-              ><v-icon>mdi-linkedin</v-icon></v-btn
-            ></v-row
-          ></v-col
-        >
+            <social-button
+              :link="'https://github.com/therealjs'"
+              :icon-name="'mdi-github'"
+            ></social-button>
+            <social-button
+              :link="'mailto:jan.seelbach@t-online.de'"
+              :icon-name="'mdi-email'"
+            ></social-button>
+            <social-button
+              :link="'https://linkedin.com/in/jan-seelbach'"
+              :icon-name="'mdi-linkedin'"
+            ></social-button></v-row
+        ></v-col>
         <v-col cols="12" md="9">
           <v-col>
             <div class="headline mt-3 brown--text font-weight-bold">
@@ -73,8 +77,18 @@
 </template>
 
 <script>
+import SocialButton from "./SocialButton.vue";
 export default {
   name: "HomeDetails",
+  components: { SocialButton },
+  methods: {
+    openGithub() {
+      let routeData = this.$router.resolve({
+        name: "github",
+      });
+      window.open(routeData.href, "_blank");
+    },
+  },
 };
 </script>
 

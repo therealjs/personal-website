@@ -55,6 +55,7 @@ export default {
         "Software Engineer.",
         "Information Systems Student.",
         "Football fan.",
+        "Kickbase Manager",
         "Coffee lover.",
       ],
       vueTyperStart: "I'm a ",
