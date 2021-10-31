@@ -2,7 +2,7 @@
   <v-container grid-list-lg>
     <v-row row>
       <v-col xs12 class="text-xs-center display-1 font-weight-black my-5"
-        >Available Meal Plans</v-col
+        >Projects</v-col
       >
     </v-row>
     <v-row row wrap class="meal-plans">
@@ -128,7 +128,7 @@
 
 <script>
 export default {
-  name: "HomePlans",
+  name: "Projects",
   methods: {
     showRecipes(plan) {
       this.$store.dispatch("getRecipes", plan);

@@ -1,22 +1,25 @@
 <template>
   <span>
-    <home-hero></home-hero>
-    <home-details></home-details>
-    <home-plans></home-plans>
+    <starter></starter>
+    <about-me></about-me>
+    <projects></projects>
+    <footer-bar></footer-bar>
   </span>
 </template>
 
 <script>
-import HomeHero from "@/components/HomeHero";
-import HomeDetails from "@/components/HomeDetails";
-import HomePlans from "@/components/HomePlans";
+import Starter from "@/components/Starter";
+import AboutMe from "@/components/AboutMe";
+import Projects from "@/components/Projects";
+import FooterBar from "@/components/FooterBar";
 
 export default {
   name: "Home",
   components: {
-    HomeHero,
-    HomeDetails,
-    HomePlans,
+    Starter,
+    AboutMe,
+    Projects,
+    FooterBar,
   },
 };
 </script>

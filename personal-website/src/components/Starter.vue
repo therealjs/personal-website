@@ -45,7 +45,7 @@
 import { VueTyper } from "vue-typer";
 
 export default {
-  name: "HomeHero",
+  name: "Starter",
   components: {
     VueTyper,
   },
