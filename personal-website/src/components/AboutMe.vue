@@ -1,7 +1,7 @@
 <template>
-  <v-container fluid>
+  <v-container id="about" fluid>
     <v-container class="inner-container">
-      <v-row class="font-weight-black text-xs-center my-5"
+      <v-row class="text-body-1 my-5"
         ><v-col cols="12" md="3" class="justify-center align-top">
           <v-row no-gutters>
             <v-col class="d-flex justify-center">
@@ -29,9 +29,8 @@
         ></v-col>
         <v-col cols="12" md="9" class="d-flex align-center">
           <v-col>
-            Hi, I am Jan, welcome to my page! I've built it to experiment it a
-            bit with Vue.js and to present myself and my projects. Have fun
-            exploring them!
+            Welcome to my page! I've built it to experiment it a bit with Vue.js
+            and to present myself and my projects. Have fun exploring them!
           </v-col>
         </v-col>
       </v-row>

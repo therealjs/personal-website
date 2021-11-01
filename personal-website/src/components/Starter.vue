@@ -1,23 +1,24 @@
 <template>
   <v-img dark max-height="500px" src="~@/assets/programming_unsplash_large.jpg">
-    <v-container fill-height fluid>
-      <v-row class="d-flex align-center justify-center white--text">
+    <v-container fluid fill-height>
+      <v-spacer></v-spacer>
+      <v-row class="ma-2 pa-2 flex-grow-0" no-gutters>
         <v-col cols="12">
           <div
             :class="{
-              'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp,
-              'title font-weight-bold': $vuetify.breakpoint.smAndDown,
+              'text-h4 font-weight-bold': $vuetify.breakpoint.smAndUp,
+              'text-h5 font-weight-bold': $vuetify.breakpoint.smAndDown,
             }"
           >
-            Welcome to my page.
+            Hi, I am Jan.
           </div>
           <div
             :class="{
-              headline: $vuetify.breakpoint.smAndUp,
-              'subtitle-1': $vuetify.breakpoint.smAndDown,
+              'text-h5 font-weight-bold': $vuetify.breakpoint.smAndUp,
+              'text-h6 font-weight-bold': $vuetify.breakpoint.smAndDown,
             }"
           >
-            <p class="hero-tagline">
+            <div>
               I am a
               <vue-typer
                 class="typing-list"
@@ -33,7 +34,7 @@
                 :erase-on-complete="false"
                 caret-animation="blink"
               />
-            </p>
+            </div>
           </div>
         </v-col>
       </v-row>
@@ -55,7 +56,7 @@ export default {
         "Software Engineer.",
         "Information Systems Student.",
         "Football fan.",
-        "Kickbase Manager",
+        "Kickbase Manager.",
         "Coffee lover.",
       ],
       vueTyperStart: "I'm a ",
@@ -65,9 +66,6 @@ export default {
 </script>
 
 <style>
-.hero-tagline {
-  font-size: 30px;
-}
 .vue-typer .custom.char {
   color: white !important;
 }

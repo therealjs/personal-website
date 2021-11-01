@@ -1,15 +1,52 @@
 <template>
-  <v-container fluid>
+  <v-container id="projects" fluid>
     <v-container class="inner-container">
       <v-row>
-        <v-col xs12 class="text-xs-center display-1 font-weight-black my-5"
-          >Projects</v-col
-        >
+        <v-col xs12 class="text-h5 my-5">Projects</v-col>
       </v-row>
+
+      <v-col xs12 sm12 md12>
+        <v-row justify="center">
+          <v-card max-height="800px" max-width="800px" class="my-5">
+            <v-card-title>myKFZ</v-card-title>
+            <v-card-subtitle class="d-flex justify-start">
+              React | Node.js | Express | MongoDB
+            </v-card-subtitle>
+            <v-divider></v-divider>
+            <v-carousel
+              height="auto"
+              cycle
+              hide-delimiters
+              show-arrows-on-hover
+              eager
+            >
+              <v-carousel-item v-for="(slide, i) in myKFZslides" :key="i" eager>
+                <v-img
+                  height="auto"
+                  class="mx-auto"
+                  contain
+                  :src="slide.src"
+                  aspect-ratio="1.77"
+                ></v-img></v-carousel-item
+            ></v-carousel>
+            <v-divider></v-divider>
+            <v-card-text
+              >myKFZ is a platform that enables its users to register and
+              deregister vehicles from the comfort of their home! Users can also
+              reserve license plates. District authorities can accept and reject
+              processes in their own dashboard.</v-card-text
+            >
+          </v-card>
+        </v-row>
+      </v-col>
+
       <v-col xs12 sm12 md12>
         <v-row justify="center">
           <v-card max-height="800px" max-width="800px" class="my-5">
             <v-card-title>OnlineIDE</v-card-title>
+            <v-card-subtitle class="d-flex justify-start">
+              Angular | Spring | Postgres | Docker
+            </v-card-subtitle>
             <v-divider></v-divider>
             <v-carousel
               height="auto"
@@ -48,39 +85,10 @@
       <v-col xs12 sm12 md12>
         <v-row justify="center">
           <v-card max-height="800px" max-width="800px" class="my-5">
-            <v-card-title>myKFZ</v-card-title>
-            <v-divider></v-divider>
-            <v-carousel
-              height="auto"
-              cycle
-              hide-delimiters
-              show-arrows-on-hover
-              eager
-            >
-              <v-carousel-item v-for="(slide, i) in myKFZslides" :key="i" eager>
-                <v-img
-                  height="auto"
-                  class="mx-auto"
-                  contain
-                  :src="slide.src"
-                  aspect-ratio="1.77"
-                ></v-img></v-carousel-item
-            ></v-carousel>
-            <v-divider></v-divider>
-            <v-card-text
-              >myKFZ is a platform that enables its users to register and
-              deregister vehicles from the comfort of their home! Users can also
-              reserve license plates. District authorities can accept and reject
-              processes in their own dashboard.</v-card-text
-            >
-          </v-card>
-        </v-row>
-      </v-col>
-
-      <v-col xs12 sm12 md12>
-        <v-row justify="center">
-          <v-card max-height="800px" max-width="800px" class="my-5">
             <v-card-title>Secret Santa</v-card-title>
+            <v-card-subtitle class="d-flex justify-start">
+              React | Spring
+            </v-card-subtitle>
             <v-divider></v-divider>
             <v-carousel
               height="auto"
