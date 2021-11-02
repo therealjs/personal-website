@@ -6,6 +6,8 @@ npm run build
 
 cd dist
 
+echo 'jseelbach.cc' > CNAME
+
 git init
 git add -A
 git commit -m 'New Deployment'
