@@ -53,11 +53,12 @@ export default {
   data() {
     return {
       roles: [
-        "Software Engineer.",
-        "Information Systems Student.",
-        "Football fan.",
-        "Kickbase Manager.",
-        "Coffee lover.",
+        "Backend Developer at Holidu.",
+        "passionate runner.",
+        "football fan.",
+        "Kickbase manager.",
+        "coffee lover.",
+        "darts player.",
       ],
       vueTyperStart: "I'm a ",
     };
